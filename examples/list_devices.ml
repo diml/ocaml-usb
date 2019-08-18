@@ -12,5 +12,5 @@ open Lwt
 let _ =
   List.iter
     (fun dev ->
-       Printf.printf "Bus %03d Device %03d\n" (USB.get_bus_number dev) (USB.get_device_address dev))
-    (USB.get_device_list ())
+       Printf.printf "Bus %03d Device %03d\n" (Usb.get_bus_number dev) (Usb.get_device_address dev))
+    (Usb.get_device_list ())

@@ -35,6 +35,7 @@ patches: [
 
 build: [
   ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "build" "@doc" "-p" name] {with-doc}
 ]
 
 install: [
